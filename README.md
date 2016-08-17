@@ -1,7 +1,7 @@
 # homebrew-wireshark-f5-ethtrailer
 
-#[![Build
-#Status]
+[![Build 
+Status] (https://travis-ci.org/lenlynch/homebrew-wireshark-f5-ethtrailer.svg?branch=master)] (https://travis-ci.org/lenlynch/homebrew-wireshark-f5-ethtrailer) 
 
 Homebrew formula with additional patches for building and installing F5 plugin to process extension data added to pcapng capture files on F5 network gear.
 
