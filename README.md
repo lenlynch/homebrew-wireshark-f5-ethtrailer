@@ -9,8 +9,7 @@ Homebrew formula with additional patches for building and installing F5 plugin t
   Plugin](https://devcentral.f5.com/wiki/advdesignconfig.F5WiresharkPlugin.ashx):
   enable with `--with-f5-ethtrailer`. 
   
-  Note:  A DevCentral account is necessary to access these URI.  
-  See [[Source] (https://devcentral.f5.com/getting-started)]
+  Note:  A DevCentral account is necessary to access these URI.  See [[Source] (https://devcentral.f5.com/getting-started)]
   The above URI is documentation provided by F5 Networks, 
   the source for the plugin URI follows:
   [[Source](https://devcentral.f5.com/wiki/GetFile.aspx?Page=AdvDesignConfig.F5WiresharkPlugin&File=wireshark2.plugin.f5ethtrailer.1.11.tar.gz)]
