@@ -1,4 +1,4 @@
-# homebrew-wireshark-f5-ethtrailer
+# homebrew-wireshark-f5-ethtrailer (experimental, optomistic, untested, really)
 
 [![Build 
 Status] (https://travis-ci.org/lenlynch/homebrew-wireshark-f5-ethtrailer.svg?branch=master)] (https://travis-ci.org/lenlynch/homebrew-wireshark-f5-ethtrailer) 
@@ -35,28 +35,16 @@ Then proceed with installation based on custom formula:
 # Note that not all combinations are always possible (due to potentially
 # conflicting patches).
 
---with-gtk+
-       	Build the wireshark command with gtk+
 --with-gtk+3
        	Build the wireshark command with gtk+3
 --with-headers
        	Install Wireshark library headers for plug-in development
---with-libsmi
-       	Build with libsmi support
 --with-lua
        	Build with lua support
---with-portaudio
-       	Build with portaudio support
 --with-qt5
        	Build the wireshark command with Qt5 (can be used with or without either GTK option)
---without-c-ares
-       	Build without c-ares support
---without-geoip
-       	Build without geoip support
---HEAD
-       	Install HEAD version
 --with-f5-ethtrailer
-		Build and Install F5 Ethtrailer plugin
+	Build and Install F5 Ethtrailer plugin
 				   
 
 > brew install lenlynch/wireshark/wireshark-f5-ethtrailer --with-gtk+3 \
