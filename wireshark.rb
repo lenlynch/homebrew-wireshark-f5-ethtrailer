@@ -1,4 +1,4 @@
-class Wireshark < Formula
+class WiresharkF5Ethtrailer < Formula
   desc "Graphical network analyzer and capture tool"
   homepage "https://www.wireshark.org"
   url "https://www.wireshark.org/download/src/all-versions/wireshark-2.0.5.tar.bz2"
