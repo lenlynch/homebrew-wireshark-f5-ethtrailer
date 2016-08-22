@@ -6,13 +6,13 @@ Status] (https://travis-ci.org/lenlynch/homebrew-wireshark-f5-ethtrailer.svg?bra
 Homebrew formula with additional patches for building and installing F5 plugin to process extension data added to pcapng capture files on F5 network gear.
 
 - [F5 Ethtrailer
-  Plugin](https://devcentral.f5.com/wiki/advdesignconfig.F5WiresharkPlugin.ashx):
+  Plugin, authoritative source](https://devcentral.f5.com/wiki/GetFile.aspx?Page=AdvDesignConfig.F5WiresharkPlugin&File=wireshark2.plugin.f5ethtrailer.1.11.tar.gz):
   enable with `--with-f5-ethtrailer`. 
   
-  Note:  A DevCentral account is necessary to access these URI.  See [[Source] (https://devcentral.f5.com/getting-started)]
-  The above URI is documentation provided by F5 Networks, 
-  the source for the plugin URI follows:
-  [[Source](https://devcentral.f5.com/wiki/GetFile.aspx?Page=AdvDesignConfig.F5WiresharkPlugin&File=wireshark2.plugin.f5ethtrailer.1.11.tar.gz)]
+  Note:  A DevCentral account is necessary to access these URI.  
+  See [[Info on getting started] (https://devcentral.f5.com/getting-started)]
+  The following documentation is provided by F5 Networks
+  [[Info on the plugin](https://devcentral.f5.com/wiki/advdesignconfig.F5WiresharkPlugin.ashx)]
 
 ## How to install
 
@@ -46,10 +46,7 @@ Then proceed with installation based on custom formula:
 	Build and Install F5 Ethtrailer plugin
 				   
 
-> brew install lenlynch/wireshark/wireshark-f5-ethtrailer --with-gtk+3 \
-  --with-lua --with-headers --with-qt5 \
-  --with-wireshark-f5-ethtrailer
+> brew install lenlynch/wireshark/wireshark-f5-ethtrailer --with-gtk+3 --with-lua --with-qt5 --with-f5-ethtrailer
 # Compile and install customized wireshark with F5 plugin support
-# This is an example, refer to the command above to see the
-# available options.
+# This is an example, refer to the options list above for a bit more detail.
 ```
