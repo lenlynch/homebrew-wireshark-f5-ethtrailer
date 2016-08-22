@@ -36,7 +36,7 @@ class Wireshark < Formula
   depends_on "gtk+3" => :optional
   depends_on "gtk+" => :optional
   depends_on "gnome-icon-theme" if build.with? "gtk+3"
-  depends_on "f5-ethtrailer" if build.with? "headers"
+  depends_on "headers" if build.with? "f5-ethtrailer"
 
   resource "libpcap" do
     url "http://www.tcpdump.org/release/libpcap-1.7.4.tar.gz"
@@ -101,16 +101,6 @@ class Wireshark < Formula
       args << "-DENABLE_LUA=OFF"
     end
 
-    system "cmake", *args
-    system "make"
-    ENV.deparallelize # parallel install fails
-    system "make", "install"
-
-    if build.with? "qt5"
-      prefix.install bin/"Wireshark.app"
-      bin.install_symlink prefix/"Wireshark.app/Contents/MacOS/Wireshark"
-    end
-
     if build.with? "headers"
       (include/"wireshark").install Dir["*.h"]
       (include/"wireshark/epan").install Dir["epan/*.h"]
@@ -131,6 +121,17 @@ class Wireshark < Formula
         sha256 "6abbc36c7b9b0e88dedd5e84e9931a658e76c629e684c14b2b97f547a37a7eb9"
       end
     end
+
+    system "cmake", *args
+    system "make"
+    ENV.deparallelize # parallel install fails
+    system "make", "install"
+
+    if build.with? "qt5"
+      prefix.install bin/"Wireshark.app"
+      bin.install_symlink prefix/"Wireshark.app/Contents/MacOS/Wireshark"
+    end
+
 
   def caveats; <<-EOS.undent
     If your list of available capture interfaces is empty
