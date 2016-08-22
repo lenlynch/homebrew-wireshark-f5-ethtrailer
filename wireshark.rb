@@ -36,6 +36,7 @@ class Wireshark < Formula
   depends_on "gtk+3" => :optional
   depends_on "gtk+" => :optional
   depends_on "gnome-icon-theme" if build.with? "gtk+3"
+  depends_on "f5-ethertrailer" => :optional
   depends_on "headers" if build.with? "f5-ethtrailer"
 
   resource "libpcap" do
