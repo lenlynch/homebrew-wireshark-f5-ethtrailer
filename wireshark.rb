@@ -116,8 +116,8 @@ class Wireshark < Formula
   end
 
     if build.with? "f5-ethtrailer"
-      patch :p0 do
-        # original source:  https://devcentral.f5.com/wiki/GetFile.aspx?Page=AdvDesignConfig.F5WiresharkPlugin&File=wireshark2.plugin.f5ethtrailer.1.11.tar.gz
+      patch do
+        # source:  https://devcentral.f5.com/wiki/GetFile.aspx?Page=AdvDesignConfig.F5WiresharkPlugin&File=wireshark2.plugin.f5ethtrailer.1.11.tar.gz
         url "https://raw.githubusercontent.com/lenlynch/homebrew-wireshark-f5-ethtrailer/master/patch/f5ethtrailer.makefiles.2.0.1.patch"
         sha256 "6abbc36c7b9b0e88dedd5e84e9931a658e76c629e684c14b2b97f547a37a7eb9"
       end
